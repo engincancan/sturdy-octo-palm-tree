@@ -11,6 +11,8 @@ on:
 jobs:
   test-upload:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
 
     steps:
       - run: mkdir -p path/to/artifact
