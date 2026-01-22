@@ -15,11 +15,11 @@ jobs:
       contents: read
 
     steps:
-      - run: mkdir -p path/to/artifact
+      - run: mkdir -p /Users/runner/work/homebase/homebase/applications/consumer-native-app/ios/build/output/Armut
 
-      - run: echo hello > path/to/artifact/world.txt
+      - run: echo hello > /Users/runner/work/homebase/homebase/applications/consumer-native-app/ios/build/output/Armut/Armut.txt
 
       - uses: actions/upload-artifact@v4
         with:
           name: my-artifact
-          path: path/to/artifact/world.txt
+          path: /Users/runner/work/homebase/homebase/applications/consumer-native-app/ios/build/output/Armut/Armut.txt
